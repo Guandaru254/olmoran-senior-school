@@ -16,5 +16,5 @@ export const highlights = [
   { title: "Storey Building", desc: "A new classroom block funded by Nobelity Project (USA), Mwanga Association (Venice, Italy), GOK/MOE-TIG Fund and the Olmoran community.", img: "" },
   { title: "Award Ceremony",  desc: "Top-performing students recognised with laptops and bicycles for outstanding academic achievement.", img: "" },
   { title: "Cultural Day",    desc: "Students celebrate Kenya's rich cultural heritage through traditional performances, music and attire.", img: "" },
-  { title: "School Bus",      desc: "The Olmoran Senior School bus — connecting learners across the region.", img: "" },
+  { title: "Fashion Showcase",      desc: "A lady showcases her traditional attire and cultural fashion at the school's annual showcase.", img: "" },
 ];

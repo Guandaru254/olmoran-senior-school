@@ -48,7 +48,7 @@ export default function HomePage() {
               <span>Integrity</span><span style={{ color:"#d4a843" }}>&#9670;</span>
               <span>Diligence</span><span style={{ color:"#d4a843" }}>&#9670;</span>
               <span>Teamwork</span><span style={{ color:"#d4a843" }}>&#9670;</span>
-              <span>CBC 2025</span><span style={{ color:"#d4a843" }}>&#9670;</span>
+              <span>CBC Curriculum</span><span style={{ color:"#d4a843" }}>&#9670;</span>
             </span>
           ))}
         </div>
