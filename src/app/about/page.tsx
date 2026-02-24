@@ -83,7 +83,7 @@ export default function AboutPage() {
                 Schools from the Northern, Central and Southern pools contributed. Key community leaders — including Mr. William Keses and former MP G.G. Kariuki — played a pivotal role in establishing the institution.
               </p>
               <p style={{ color:"var(--muted)",lineHeight:1.9,fontSize:"0.95rem" }}>
-                These contributions led to the construction of the first classrooms, and the school opened its doors in May 2003. Today, the school has grown into Olmoran Senior School, serving 611 learners across two CBC pathways.
+                These contributions led to the construction of the first classrooms, and the school opened its doors in May 2003. Today, the school has grown into Olmoran Senior School, serving 600+ learners across two CBC pathways.
               </p>
             </div>
 
@@ -114,15 +114,15 @@ export default function AboutPage() {
         <div className="wrap">
           <div style={{ display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:"1.25rem" }}>
             {[
-              { num:"611",    label:"Total Students",     sub:"304 boys · 307 girls" },
-              { num:"26",     label:"Teaching Staff",      sub:"TSC-registered teachers" },
-              { num:"15",     label:"Non-Teaching Staff",  sub:"Supporting all operations" },
-              { num:"2003",   label:"Year Established",    sub:"Olmoran Town Centre" },
+              { num:"600+",    label:"Total Students",      },
+              { num:"25+",     label:"Teaching Staff",      },
+              { num:"15+",     label:"Non-Teaching Staff",  },
+              { num:"2003",   label:"Year Established",     },
             ].map(s => (
               <div key={s.label} className="card stat-box" style={{ padding:"1.75rem",textAlign:"center",background:"rgba(255,255,255,0.04)",borderColor:"rgba(255,255,255,0.08)",transition:"border-color 0.25s,transform 0.25s,box-shadow 0.25s" }}>
                 <div style={{ fontFamily:"Georgia,serif",fontSize:"2rem",fontWeight:700,color:"#e4eaf5",lineHeight:1 }}>{s.num}</div>
                 <div style={{ fontWeight:700,fontSize:"0.85rem",color:"#93b8e0",marginTop:"0.4rem",marginBottom:"0.2rem" }}>{s.label}</div>
-                <div style={{ fontFamily:"'Trebuchet MS',Arial,sans-serif",fontSize:"0.72rem",color:"rgba(147,184,224,0.45)" }}>{s.sub}</div>
+                <div style={{ fontFamily:"'Trebuchet MS',Arial,sans-serif",fontSize:"0.72rem",color:"rgba(147,184,224,0.45)" }}>{}</div>
               </div>
             ))}
           </div>
