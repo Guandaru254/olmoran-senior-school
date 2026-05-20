@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-// Explicitly forces mobile devices and browsers to recognize this as a light-themed platform
 export const viewport: Viewport = {
   colorScheme: "light",
   themeColor: "#ffffff",
@@ -13,9 +12,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  // Absolute base URL required for Open Graph image rendering to work perfectly on Next.js 14/15/App Router
   metadataBase: new URL("https://olmoranhighschool.sc.ke"),
   
+  // Standard SEO
   title: { 
     default: "Olmoran Senior School | In Pursuit of Excellence", 
     template: "%s | Olmoran Senior School" 
@@ -35,29 +34,35 @@ export const metadata: Metadata = {
   creator: "Brave Technologies",
   publisher: "Olmoran Senior School",
   
-  // Geolocation signals for localized Kenyan Search Engine Optimization
   alternates: {
     canonical: "https://olmoranhighschool.sc.ke",
   },
 
-  // Open Graph Data Card Configurations (WhatsApp, Facebook, LinkedIn Link Previews)
+  // Open Graph — Optimised explicitly for WhatsApp Mobile layout rendering
   openGraph: {
-    title: "Olmoran Senior School — In Pursuit of Excellence",
-    description: "Serving 600+ learners across dual CBC pathways in Laikipia County. Rooted in community, built on sacrifice, driven by academic excellence since 2003.",
+    type: "website",
     url: "https://olmoranhighschool.sc.ke",
+    title: "Olmoran Senior School", // Shortened slightly to prevent mobile clipping truncation
+    description: "In Pursuit of Excellence — Serving 600+ learners across dual CBC pathways in Laikipia County since 2003.",
     siteName: "Olmoran Senior School",
     locale: "en_KE",
-    type: "website",
+    images: [
+      {
+        url: "/icon.png", // Explicit fallback string matching your public logo asset
+        width: 512,
+        height: 512,
+        alt: "Olmoran Senior School Logo",
+      }
+    ],
   },
 
-  // Twitter/X Rich Link Preview Card Customization
+  // Twitter/X Preview
   twitter: {
-    card: "summary_large_image",
-    title: "Olmoran Senior School | Laikipia County",
+    card: "summary",
+    title: "Olmoran Senior School",
     description: "Shaping disciplined, skilled, and principled leaders under the CBC framework in Kenya.",
   },
 
-  // Explicit Robot crawling rules for clean Google Search Console indexing
   robots: {
     index: true,
     follow: true,
@@ -83,7 +88,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-        {/* Enforces light mode explicitly on page paint if no dark theme parameter is manually stored */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){
